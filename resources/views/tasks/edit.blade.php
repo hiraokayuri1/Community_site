@@ -53,6 +53,7 @@
                        value="{{ old('due_date') ?? $task->formatted_due_date }}" />
               </div>
               <div class="text-right">
+              <a href="{{ route('tasks.index')}}" class="btn btn-primary">キャンセル</a>
                 <button type="submit" class="btn btn-primary">送信</button>
               </div>
             </form>

@@ -31,7 +31,8 @@
          <input type="file" class="form-control-file" id="image" name="image">       
         </div> -->
 
-     <button type="submit" class="btn btn-primary">更新する</button>
+       <a href="{{ route('posts.index')}}" class="btn btn-edit">キャンセル</a>
+     <button type="submit" class="btn btn-pot">更新する</button>
       </form>
       </div>
     </div>

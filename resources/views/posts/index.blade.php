@@ -10,14 +10,12 @@
         <a href="{{ route('posts.create')}}" class="btn btn-light">新規投稿はこちら</a>    
         <div class="row">
     <div class="col-md-6">
-      <!-- <h5>[ 検索欄 ]</h5> -->
       <div id="custom-search-input">
       <div class="input-group col-md-12">
         <form action="{{ route('posts.search') }}" method="POST">
           {{ csrf_field() }}
       <input type="text" class="form-control input-lg" placeholder="Search"/ name="search">
-      <!-- <span class="btn btn-info btn-lg" type="button"> -->
-        <!-- <h6>検索</h6> -->
+     
         <span class="input-group-btn" style="position: relative;top: -37px;right: -193px;">
        <button class="btn btn-info" type="submit">
         <!-- <i class="glyphicon glyphicon-search"></i> -->
@@ -73,12 +71,10 @@
       <div class="card-footer text-muted">
                 投稿日：{{ $post->created_at }}
             </div>
-            @endforeach
-            
+            @endforeach      
         </div>
-       
-             <div class="paginate">
-	           {{ $posts->links() }}
+        <div class="paginate">
+             {{ $posts->links() }}
              </div>
       </div>
    </div> 

@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', '新規投稿')
+@section('title', '連絡新規作成')
 @section('content')
 <div class="row">
     <div class="col-md-7 col-md-offset-2">

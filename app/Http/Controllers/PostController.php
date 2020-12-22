@@ -17,10 +17,11 @@ class PostController extends Controller
     //ブログ一覧画面
     public function index() {
 
-    //  $posts = Post::all();
-    //5つ表示されたら次の投稿は2ページ目に移す
-    $posts = Post::paginate(5);
     
+    //5つ表示されたら次の投稿は2ページ目に移す
+    //最新の投稿に並び替える
+    $posts = Post::orderBy('created_at', 'desc')->paginate(5);
+    //  $posts = Post::paginate(5);
       return view('posts.index', compact('posts'));
     }
 

@@ -5,7 +5,6 @@
         <div class="container">
       
       <div class="mb-4">
-       <!-- <h3>{{ $user_name }}の投稿一覧</h3> -->
        <h3>{{ $user_name }}の投稿一覧</h3>
         @foreach ($posts as $post)
         <div class="card-body">
@@ -31,9 +30,7 @@
           Good数 {{ $post->users->count() }}
         </span>
          @endif
-        <!-- </div> -->
-      <!-- </div> -->
-      
+       
      
      @endforeach
 
