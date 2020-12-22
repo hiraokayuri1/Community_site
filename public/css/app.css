@@ -2719,6 +2719,7 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+
 .btn-primary {
   color: #fff;
   background-color: #FF9933	;
@@ -3144,7 +3145,6 @@ fieldset:disabled a.btn {
   margin-top: 15px;
 }
 
-
 .btn-blog {
   color: #fff;
   background-color: #f3bd6c;
@@ -3179,6 +3179,13 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #5858e0;
   border: 3px solid #5858e0;
+  margin-left: 40px;
+}
+
+.btn-edit:hover {
+  color: #fff;
+  background-color: #0303f5;
+  border: 3px solid #0303f5;
   margin-left: 40px;
 }
 

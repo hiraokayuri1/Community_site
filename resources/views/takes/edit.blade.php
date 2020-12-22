@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-7 col-md-offset-2">
-        <h3>編集画面</h3>
+        <!-- <h3>連絡事項を編集</h3> -->
         <form method="POST" action="{{ route('takes.update') }}" onSubmit="return checkSubmit()">
         @csrf
         <input type="hidden" name="id" value="{{ $take->id }}">

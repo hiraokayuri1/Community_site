@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', '連絡周知一覧')
+@section('title', '連絡事項一覧')
 @section('content')
     <div class="container">
     <div class="row">
   <div class="col-md-9 col-md-offset-2">
-      <h3> - 連絡一覧 - </h3>
+      <h3> - 連絡事項一覧 - </h3>
       @if (session('err_msg'))
        <p class="text-danger">
        {{ session('err_msg') }}
